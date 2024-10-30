@@ -1,0 +1,276 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global reset and default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.header {
+    padding: 20px 0;
+    background-color: #161616;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #00e1ff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a.active {
+    color: #00e1ff;
+}
+
+/* Home section styles */
+.home {
+    padding: 100px 0;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+}
+
+.home-img {
+    flex: 1;
+}
+
+.home-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.home-text {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home-text h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.social-icon a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #00e1ff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon a:hover {
+    background-color: #00e1ff;
+    border-color: #00e1ff;
+}
+
+.social-icon a i {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00e1ff;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00b8d4;
+}
+
+/* Home image styles */
+.home-img {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-img img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.home-img:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(133, 139, 135, 0.996); /* Adding a lighting effect */
+}
+
+/* Home image styles */
+.home-img {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text img {
+    width: 50px; /* Adjust according to your image size */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.home-img img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.home-img .animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 80%);
+    animation: rotate 6s linear infinite;
+    z-index: -1; /* Ensure the animation is behind the image */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.home-img:hover .animation {
+    animation-play-state: paused; /* Pause the animation on hover */
+    box-shadow: 0 0 20px rgba(194, 185, 185, 0.977); /* Add lighting effect */
+}
+
+@media(max-width:1000px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 40%;
+        border-left: 3px solid var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem 3%;
+        background-color: var(--second-bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        transition: all .5s ease-in-out;
+        filter: drop-shadow(-10px 10px 25px var(--main-color));
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        padding: 1rem;
+        border-radius: .5rem;
+        border-bottom: .5rem solid var(--main-color);
+        color: #00e1ff; /* Change color on hover */
+    }
+}
+
+.home {
+    gap: 4rem;
+}
+
+.main_img {
+    height: 300px !important;
+    width: 300px !important;
+}
+
+@media (max-width:500px) {
+    .navbar {
+        width: 60%;
+    }
+
+    .home .home-contain h1 {
+        font-size: 5rem;
+    }
+    .home-contain h3{
+        font-size: 3rem;
+    }
+}
+.logo-img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* This will make it a circle */
+    
+}
+.navbar a:hover {
+    color: #00e1ff; /* Change to your desired color */
+    /* Add any additional styles you want for the hover effect */
+    text-decoration: none; /* Remove underline from linked text on hover */
+    transition: color 0.2s ease; /* Add a smooth transition effect for the color change */
+}

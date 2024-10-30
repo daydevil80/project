@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about DayDevil$, MournDevil, and NightDevil - our team of talented developers.">
+    <title>About Us - DayDevil$</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">DayDevil$</a>
+            <nav class="navbar" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="service.html">Services</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <div class="bars" id="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="about-us" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Meet our team of specialized developers, each with a unique skill set tailored to bring your projects to life.</p>
+            
+            <div class="team">
+                <!-- DayDevil -->
+                <div class="team-member">
+                    <h3>DayDevil</h3>
+                    <p>The expert in daytime development, DayDevil brings light to challenging projects and tackles frontend development with precision and creativity.</p>
+                    <img src="https://ideogram.ai/api/images/direct/h5SgKIinQ6qrXxgpBgDHlg.png" alt="DayDevil" class="devil-img">
+                </div>
+
+                <!-- MournDevil -->
+                <div class="team-member">
+                    <h3>MournDevil</h3>
+                    <p>A master of backend intricacies, MournDevil specializes in managing databases, server-side logic, and ensuring security with each line of code.</p>
+                    <img src="https://ideogram.ai/assets/image/lossless/response/4snX5WalRQStumtQG9AfOw" alt="MournDevil" class="devil-img">
+                </div>
+
+                <!-- NightDevil -->
+                <div class="team-member">
+                    <h3>NightDevil</h3>
+                    <p>NightDevil excels at night, handling complex algorithms and performance optimization. A perfect fit for those seeking top performance and innovative solutions.</p>
+                    <img src="https://ideogram.ai/assets/progressive-image/balanced/response/jc-k0X7kSVSIf3prXe4uDQ" alt="NightDevil" class="devil-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let bars = document.querySelector("#bars");
+        let navbar = document.querySelector(".navbar");
+        bars.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

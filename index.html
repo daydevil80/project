@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to DayDevil$ website. Hire DayDevil$ for your next project.">
+    <title>DayDevil$ - Freelance Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            
+            <img src="https://ideogram.ai/api/images/direct/h5SgKIinQ6qrXxgpBgDHlg.png" class="logo-img">
+            <a href="#" class="logo" >DayDevil$</a>
+            <nav class="navbar" id="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="service.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <div class="bars" id="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-img">
+                    <img src="https://ideogram.ai/api/images/direct/OkZKJxzCSmKsnMJStfjQDw.png" alt="DayDevil$ Logo">
+                    <div class="animation"></div>
+                </div>
+                <div class="home-text">
+                    <div class="logo-text">
+                       
+                        <h1>Hi, it's <span>DayDevil$</span></h1>
+                    </div>
+                    <h3 class="typing-text"><span id="element"> </span></h3>
+                    <p>Welcome to our website. We are an independent developer prepared to handle your assignments.</p>
+                    <p>Are you an entrepreneur seeking to promote your product or an impressive website to display your offerings? search ends here! Daydevil$ is ready to deliver prompt and effective solutions to support you in reaching your objectives</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="#" class="btn">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        var typed = new Typed('#element', {
+            String: ['Web Developer', 'Graphic Designer'],
+            typespeed: 80,
+            loop: true
+        });
+    
+        let bars = document.querySelector("#bars");
+        let navbar = document.querySelector(".navbar"); // Changed from "navbar" to ".navbar"
+        bars.addEventListener("click", () =>
+            navbar.classList.toggle("active")
+        );
+    </script>
+    
+</body>
+</html>

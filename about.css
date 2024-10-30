@@ -1,0 +1,136 @@
+/* Navbar Styling */
+.header {
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  color: #f4a261;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header .navbar a {
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header .navbar a.active,
+.header .navbar a:hover {
+  background-color: #f4a261;
+  color: #1e1e1e;
+}
+
+/* Navbar Toggle for Mobile */
+.bars {
+  display: none;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      display: none;
+      flex-direction: column;
+      background-color: #1e1e1e;
+      width: 100%;
+      padding: 1rem;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      border-top: 1px solid #333;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar.active {
+      display: flex;
+  }
+
+  .navbar a {
+      padding: 0.8rem 1rem;
+      text-align: left;
+      width: 100%;
+  }
+
+  .bars {
+      display: block;
+  }
+}
+
+.about-us {
+  padding: 4rem 0;
+  background-color: #121212;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  color: #f4a261;
+  margin-bottom: 1rem;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  color: #bdbdbd;
+  margin-bottom: 2rem;
+}
+
+/* Team Section */
+.team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.team-member {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member h3 {
+  color: #f4a261;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  color: #bdbdbd;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.devil-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #f4a261;
+}
